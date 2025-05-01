@@ -2,8 +2,7 @@
 export default function Home() {
   return (
     <div>
-      Mir Saif ali
-
+      Mir Saif ALi
     </div>
   );
 }
