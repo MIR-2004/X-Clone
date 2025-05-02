@@ -1,6 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
-
+import Image from "./Image";
 const menuList = [
   {
     id: 1,
@@ -70,7 +69,7 @@ const LeftBar = () => {
       {/**logo menu button */}
       <div className=" flex flex-col gap-4 items-center xxl:items-start">
         <Link href="/" className="p-2 rounded-full hover:bg-[#181818] flex items-center gap-4">
-          <Image src="icons/logo.svg" alt="logo" width={24} height={24}/>
+          <Image path="icons/logo.svg" alt="logo" w={24} h={24}/>
         </Link>
 
         {/**menu list */}
@@ -78,7 +77,7 @@ const LeftBar = () => {
             {
               menuList.map(item => (
                 <Link href={item.link} className="p-2 rounded-full hover:bg-[#181818] flex items-center gap-4" key={item.id}>
-                  <Image src={`icons/${item.icon}`} alt={item.name} width={24} height={24}/>
+                  <Image path={`icons/${item.icon}`} alt={item.name} w={24} h={24}/>
                   <span className="hidden xxl:inline">{item.name}</span>
                 </Link>
               ))
@@ -87,7 +86,7 @@ const LeftBar = () => {
       </div>
       {/**button */}
       <Link href='/' className="bg-white text-black rounded-full w-12 h-12 flex items-center justify-center xxl:hidden">
-            <Image src="icons/post.svg" alt="new post" width={24} height={24} />
+            <Image path="icons/post.svg" alt="new post" w={24} h={24} />
       </Link>
       <Link href='/' className="hidden xxl:block bg-white text-black rounded-full font-bold py-2 px-20">
            Post
@@ -96,7 +95,7 @@ const LeftBar = () => {
       <div className=" flex items-center justify-between">
         <div className="flex items-center gap-2">
               <div className="w-10 h-10 relative rounded-full overflow-hidden">
-                <Image src="/general/avatar.png" alt="Mir-2004" fill/>
+                <Image path="/general/avatar.png" alt="Mir-2004" />
               </div>
               <div className="hidden xxl:flex flex-col">
                 <span className="font-bold">MirSaifAli</span>
