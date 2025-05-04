@@ -44,7 +44,7 @@ const menuList = [
     icon: "community.svg",
   },
   {
-    id: 8,
+    id: 8, 
     name: "Premium",
     link: "/",
     icon: "logo.svg",
@@ -95,7 +95,7 @@ const LeftBar = () => {
       <div className=" flex items-center justify-between">
         <div className="flex items-center gap-2">
               <div className="w-10 h-10 relative rounded-full overflow-hidden">
-                <Image path="/general/avatar.png" alt="Mir-2004" />
+                <Image path="/general/avatar.png" alt="Mir-2004" w={100} h={100} tr={true} />
               </div>
               <div className="hidden xxl:flex flex-col">
                 <span className="font-bold">MirSaifAli</span>
