@@ -1,6 +1,6 @@
 const RightBar = () => {
   return (
-    <div>RightBar</div>
+    <div>RightBars</div>
   )
 }
 
